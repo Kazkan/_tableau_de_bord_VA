@@ -18,7 +18,7 @@ import utils.sidebar as sb
 
 # vérification de l'existence d'un fichier utilisateur dans les données internes
 st.write(os.path.exists(rf.rep_int("utilisateurs")))
-st.write(rf.rep_int("cat_desordre"))
+st.write(rf.rep_int("utilisateurs"))
 if os.path.exists(rf.rep_int("utilisateurs")) :
     # s'il existe, on le charge
     with open(rf.rep_int("utilisateurs") , "r", encoding="utf-8") as file:
