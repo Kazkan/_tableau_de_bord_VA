@@ -33,7 +33,7 @@ def rep_int(type : str) -> str :
         return str(st.session_state["utilisateurs"][st.session_state["utilisateur_courant"]][0]+"/"+st.session_state["vue_courante"]+"/ref_systeme.json")
     # renvoie du répertoire du fichier des utilisateurs
     if type == "utilisateurs" :
-        return str(output[:-6]+"\data/utilisateurs.json")
+        return "tableau_de_bord_VA/tableau_de_bord/data/utilisateurs.json"
         # renvoie du répertoire du fichier des utilisateurs
     if type == "rep_utilisateurs" :
         return str(output[:-6]+"\data/rep_utilisateurs.json")
