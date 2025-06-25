@@ -17,7 +17,7 @@ import utils.sidebar as sb
 ########## initialisation des session states ###########
 
 # vérification de l'existence d'un fichier utilisateur dans les données internes
-st.write(os.path.exists(rf.rep_int("cat_desordre")))
+st.write(os.path.exists(rf.rep_int("utilisateurs")))
 st.write(rf.rep_int("cat_desordre"))
 if os.path.exists(rf.rep_int("utilisateurs")) :
     # s'il existe, on le charge
