@@ -179,7 +179,7 @@ def sidebar_content() :
                 # bouton de lancement 
                 if st.button("Exporter  ", key="but_exporter_vue") :
                     # répertoire d'enregistrement 
-                    rep_export = subprocess.run(["python", rf.rep_int("application") + "/utils/tk_widget.py"],capture_output=True, text=True, check=True).stdout.strip()
+                    rep_export = tw.select_file()
                     # on vérifie que le répertoire existe
                     if os.path.exists(rep_export) :
                         # on controle que la vue n'existe pas déjà dans le répertoire de copie
