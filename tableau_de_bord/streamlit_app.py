@@ -12,10 +12,7 @@ import streamlit as st
 
 from st_pages import add_page_title, get_nav_from_toml
 
-st.set_page_config(layout="wide")
-
-nav = get_nav_from_toml(rf.rep_int("toml"))
-
-pg = st.navigation(nav)
-
-pg.run()
+st.set_page_config(
+    page_title="Home page",
+    page_icon="👋",
+    layout="wide")
