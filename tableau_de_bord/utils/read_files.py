@@ -18,13 +18,13 @@ def rep_int(type : str) -> str :
     output = os.path.dirname(os.path.abspath(__file__))
     # renvoie du répertoire de l'application
     if type == "application" :
-        return str(output[:-6])
+        return "tableau_de_bord"
     # renvoie du répertoire des données propres à l'application
     if type == "data" :
-        return str(output[:-6]+"\data")
+        return "tableau_de_bord\data"
     # renvoie du répertoire des pages
     if type == "pages" :
-        return str(output[:-6]+"\modules")   
+        return "tableau_de_bord\pages"  
     # renvoie du répertoire du fichier de reference des systemes propres à l'application  : OBSOLETE
     #if type == "systeme" :
     #    return str(output[:-6]+"\data/ref_system.json")
@@ -33,10 +33,10 @@ def rep_int(type : str) -> str :
         return str(st.session_state["utilisateurs"][st.session_state["utilisateur_courant"]][0]+"/"+st.session_state["vue_courante"]+"/ref_systeme.json")
     # renvoie du répertoire du fichier des utilisateurs
     if type == "utilisateurs" :
-        return "tableau_de_bord/data/utilisateurs.json"
+        return "tableau_de_bord\data/utilisateurs.json"
         # renvoie du répertoire du fichier des utilisateurs
     if type == "rep_utilisateurs" :
-        return str(output[:-6]+"\data/rep_utilisateurs.json")
+        return "tableau_de_bord\data/rep_utilisateurs.json"
     # renvoie du répertoire des fichiers des thématiques : OBSOLETE
     # if type == "thematique" :
     #    return str(output[:-6]+"\data/thematique")
@@ -52,19 +52,17 @@ def rep_int(type : str) -> str :
         return str(st.session_state["utilisateurs"][st.session_state["utilisateur_courant"]][0]+"/"+st.session_state["vue_courante"]+"/tableau_de_bord.json")
     # renvoie du répertoire du fichier des catégorie de désordre
     if type == "cat_desordre" :
-        return str(output[:-6]+"\data/categorie_desordre.json")
+        return "tableau_de_bord\data/categorie_desordre.json"
     # renvoie du répertoire du fichier des suite de désordre
     if type == "suite_desordre" :
-        return str(output[:-6]+"\data/suite_desordre.json")
+        return "tableau_de_bord\data/suite_desordre.json"
     # renvoie du répertoire du fichier des codes desordres
     if type == "code_urgence" :
-        return str(output[:-6]+"\data/desordre_urgence.json")
+        return "tableau_de_bord\data/desordre_urgence.json"
     # renvoie du repertoire des images
     if type == "images" :
-        return str(output[:-6]+"\data/img")
+        return "tableau_de_bord\data/img"
     # renvoie du répertoire du fchier toml
-    if type == "toml" :
-        return str(output[:-6]+"/.streamlit/config.toml")
     
 # fonction pour obtenir la date de création d'un fichier
 def date_fichier(chemin : str) -> str :
