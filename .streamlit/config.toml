@@ -1,0 +1,30 @@
+[theme]
+primaryColor="#6eb52f"
+backgroundColor="#f0f0f5"
+secondaryBackgroundColor="#e0e0ef"
+textColor="#262730"
+font="sans serif"
+
+[[pages]]
+path = "tableau_de_bord/1_ACCUEIL.py"
+name = "Accueil"
+
+[[pages]]
+path = "tableau_de_bord/2_TABLEAU_DE_BORD.py"  
+name = "Tableau_de_bord"
+
+[[pages]]
+path = "3_DESORDRES.py" 
+name = "Desordres"      
+
+[[pages]]
+path = "tableau_de_bord/4_PRESTATIONS.py" 
+name = "Prestations"     
+
+[[pages]]
+path = "tableau_de_bord/5_RESEAUX.py" 
+name = "Reseaux"     
+
+[[pages]]
+path = "tableau_de_bord/6_PARAMETRES.py"  
+name = "Parametres"       
